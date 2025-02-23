@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3cae033;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: rgb(177, 209, 21);
+    padding: 0;
+    text-align: center;
+
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(32, 156, 84);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.filters {
+    width: 200px;
+    padding: 1rem;
+    background-color: #5bc4d6;
+    box-shadow: 0 4px 8px rgba(218, 27, 27, 0.797);
+    margin: 2rem;
+}
+
+.filters h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.filters ul {
+    list-style-type: none;
+}
+
+.filters ul li {
+    margin: 0.5rem 0;
+}
+
+.filters ul li a {
+    text-decoration: none;
+    color: #ae3333;
+    font-size: 1.2rem;
+}
+
+.filters ul li a:hover {
+    color: #007BFF;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+    
+}
+
+.product {
+    background-image: "images/pbg.jpg";
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(18, 206, 191);
+    width: 250px;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #2cd7e0;
+    margin-bottom: 1rem;
+    
+}
+
+.product .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.product button {
+    background-color: #d11a88;
+    color: rgb(74, 206, 232);
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.product button:hover {
+    background-color: #e71919;
+}
+
+
+.checkout {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgb(11, 130, 94);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.checkout h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.checkout h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.checkout-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.checkout-button:hover {
+    background-color: #0056b3;
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    
+    
+}
+
+.product {
+    background-color: #29d7ba;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(46, 167, 214, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #c13737;
+    margin-bottom: 1rem;
+}
+
+.product .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.product button {
+    background-color: #333;
+    color:blue;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.category {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.category-link {
+    background-color: #e372b9;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category-link:hover {
+    background-color: #0056b3;
+}
